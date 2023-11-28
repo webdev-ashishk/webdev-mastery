@@ -64,12 +64,31 @@ const NavBar = () => {
         </ul>
       </nav>
       {showMenu && (
-        <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg">
-          <ul className="border-2 w-full bg-blue-800 text-2xl font-bold">
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-            <li>blogs</li>
+        <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg m-2">
+          <ul className="border-2 w-full bg-black text-2xl font-bold text-center">
+            <li className="mt-2">
+              <Link href="/courses">courses</Link>
+            </li>
+            <li>
+              <Link href="/projects">projects</Link>
+            </li>
+            <ul className="flex justify-center gap-5 m-4">
+              <li>
+                <button onClick={handleYoutube}>
+                  <AiFillYoutube />
+                </button>
+              </li>
+              <li>
+                <button onClick={handleGitHub}>
+                  <FaGithub />
+                </button>
+              </li>
+              <li>
+                <button onClick={handleLinkedin}>
+                  <FaLinkedin />
+                </button>
+              </li>
+            </ul>
           </ul>
         </div>
       )}
