@@ -2,13 +2,13 @@ const Body = () => {
   return (
     <div className="border-2 border-solid border-red-500">
       <h1>Important Links</h1>
-      <ul className="flex text-4xl border-2 border-solid border-blue-500">
+      <ul className="flex text-4xl justify-center gap-8 sm:flex-col sm:gap-3 md:flex-row border-2 border-solid border-blue-500">
         <li className="m-2">
           <button
             type="button"
             class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-bold rounded-lg px-5 py-2.5 text-center me-2 mb-2"
           >
-            Courses Video list
+            Course Video list
           </button>
         </li>
         <li className="m-2">

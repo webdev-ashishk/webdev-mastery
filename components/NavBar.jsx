@@ -26,7 +26,7 @@ const NavBar = () => {
     );
   };
   return (
-    <div className="border-2 flex justify-between m-2">
+    <div className="border-2 flex justify-between m-2 sticky top-0">
       <div className="flex  gap-4 text-5xl m-2 font-bold ">
         <snap className="">
           <Image
@@ -39,7 +39,7 @@ const NavBar = () => {
         <h1 className="sm:hidden lg:block md:block">Tailwinds</h1>
       </div>
       <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
-        <ul className="flex gap-7  text-3xl font-bold">
+        <ul className="flex gap-7 sm:text-1xl  md:text-3xl md:font-bold sm:font-semibold">
           <li>
             <Link href="/courses">courses</Link>
           </li>
