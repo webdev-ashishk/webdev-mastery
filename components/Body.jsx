@@ -6,9 +6,9 @@ const Body = () => {
   return (
     <main>
       {/* important links  */}
-      <div className="border-2 border-solid border-red-500">
+      <div className="">
         <h1 className="text-3xl font-bold m-5">Important Links</h1>
-        <ul className="flex text-4xl justify-center gap-8 sm:flex-col sm:gap-3 md:flex-row ">
+        <ul className="flex text-4xl justify-center gap-8 flex-wrap sm:gap-4">
           <li className="m-2">
             <button
               type="button"
@@ -30,7 +30,7 @@ const Body = () => {
       {/* latest post  */}
       <div>
         <h1 className="text-3xl font-bold m-5">Latest Posts</h1>
-        <div className="border-2 flex flex-wrap m-1 gap-3">
+        <div className="flex flex-wrap m-1 gap-3 justify-center items-center">
           <LatestPost />
           <LatestPost />
           <LatestPost />
