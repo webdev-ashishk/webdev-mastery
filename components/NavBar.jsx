@@ -26,7 +26,7 @@ const NavBar = () => {
     );
   };
   return (
-    <div className="border-2 flex justify-between m-2 sticky top-0">
+    <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex justify-between mx-2  sticky top-0">
       <div className="flex  gap-4 text-5xl m-2 font-bold ">
         <snap className="">
           <Image
@@ -36,7 +36,7 @@ const NavBar = () => {
             width={50}
           />
         </snap>
-        <h1 className="sm:hidden lg:block md:block font-bold text-blue-500">
+        <h1 className="sm:hidden lg:block md:block font-bold ">
           <Link href={"/"}>SUMAN</Link>
         </h1>
       </div>
