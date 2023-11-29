@@ -37,6 +37,10 @@ const Body = () => {
           <LatestPost />
           <LatestPost />
           <LatestPost />
+          <LatestPost />
+          <LatestPost />
+          <LatestPost />
+          <LatestPost />
         </div>
       </div>
     </main>
