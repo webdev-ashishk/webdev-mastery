@@ -36,7 +36,9 @@ const NavBar = () => {
             width={50}
           />
         </snap>
-        <h1 className="sm:hidden lg:block md:block">Tailwinds</h1>
+        <h1 className="sm:hidden lg:block md:block font-bold text-blue-500">
+          <Link href={"/"}>SUMAN</Link>
+        </h1>
       </div>
       <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
         <ul className="flex gap-7 sm:text-1xl  md:text-3xl md:font-bold sm:font-semibold">
