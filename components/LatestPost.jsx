@@ -1,25 +1,28 @@
-import Image from "next/image";
+async function getLatestPostData() {
+  const res = await fetch("http://localhost:3000/api/posts");
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
 
-const LatestPost = () => {
+  return res.json();
+}
+const LatestPost = async () => {
+  const posts = await getLatestPostData();
+  console.log(posts);
   return (
-    <div className="hover:scale-y-105 rounded-lg  m-4 w-[200px] pt-1 border-2 hover:bg-gradient-to-r from-purple-400">
-      <Image
-        className="rounded-lg"
-        src={
-          "https://codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg"
-        }
-        width={200}
-        height={200}
-        alt="course-image"
-      ></Image>
-      <ul className="px-2">
-        <li className="font-bold">
-          TATA COMMUNICATIONS is Hiring 2024, 2023, 2022, 2021, 2020, 2019 &
-          2018 Batch || Off Campus Drive
-        </li>
-        <li>30/11/2023</li>
-      </ul>
-    </div>
+    <main>
+      {posts.map((post) => (
+        <div key={post.id}>
+          {/* <Image
+            src={post.image}
+            width={200}
+            height={200}
+            alt="post-image"
+          ></Image> */}
+          <h1>{post.title}</h1>
+        </div>
+      ))}
+    </main>
   );
 };
 

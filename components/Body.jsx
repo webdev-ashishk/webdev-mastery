@@ -32,15 +32,6 @@ const Body = () => {
         <h1 className="text-3xl font-bold m-5">Latest Posts</h1>
         <div className="flex flex-wrap m-1 gap-3 justify-center items-center">
           <LatestPost />
-          <LatestPost />
-          <LatestPost />
-          <LatestPost />
-          <LatestPost />
-          <LatestPost />
-          <LatestPost />
-          <LatestPost />
-          <LatestPost />
-          <LatestPost />
         </div>
       </div>
     </main>
