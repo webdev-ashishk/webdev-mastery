@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import LatestPost from "./LatestPost";
+import LatestPost from "../app/latestPost/page";
 
 const Body = () => {
   return (

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 async function getLatestPostData() {
   const res = await fetch("http://localhost:3000/api/posts");
@@ -18,14 +19,16 @@ const LatestPost = async () => {
           key={post.id}
           className="hover:scale-y-105 rounded-lg  m-4 w-[200px] pt-1 border-2 hover:bg-gradient-to-r from-purple-400"
         >
-          <Image
-            src={post.image}
-            width={200}
-            height={200}
-            alt="post-image"
-          ></Image>
-          <h1>{post.title}</h1>
-          <p>{post.postDate}</p>
+          <Link href={`latestPost/${post.id}`}>
+            <Image
+              src={post.image}
+              width={200}
+              height={200}
+              alt="post-image"
+            ></Image>
+            <h1>{post.title}</h1>
+            <p>{post.postDate}</p>
+          </Link>
         </div>
       ))}
     </main>
