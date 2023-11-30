@@ -41,7 +41,7 @@ const NavBar = () => {
         </h1>
       </div>
       <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
-        <ul className="flex gap-7 sm:text-1xl  md:text-3xl md:font-bold sm:font-semibold">
+        <ul className="sm:text-1xl flex gap-7 mx:text-1xl  md:text-3xl md:font-bold">
           <li>
             <Link href="/courses">courses</Link>
           </li>
